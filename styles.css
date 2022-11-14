@@ -1,0 +1,74 @@
+/* Reset Boilerplate and General Styles*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, img {
+ margin: 0;
+ padding: 0; 
+ border: 0;
+ box-sizing: border-box;
+ text-align: center;
+}
+body {
+    background-color: lightgray;
+}
+*, *:before,*:after {
+	box-sizing: inherit;
+}
+ul {
+    list-style: none;
+}
+hr {
+    display: block; 
+    height: 1px; 
+    border: 0; 
+    border-top: 1px solid #ccc; 
+    margin: 1em 0; 
+    padding: 0;
+}
+
+/* Title */
+header {
+    margin: 15px;
+}
+
+/* Post Card */
+div.post {
+    width: 45%;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;    
+}
+
+/* Post Header */
+div.post-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.post-header .post-date {
+    color: gray;
+    font-size: 0.875rem;
+}
+
+
+/* Image alignment and centering. Difficult to handle because images were randomly selected and have different sizes!! */
+div.post-image {
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+div.post-image img {
+   max-width: 125%;
+   max-height: 125%;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+/* Post Footer */
+div.post-description {
+    padding: 15px;
+}
+div.post-description p {
+    text-align: left;
+}
